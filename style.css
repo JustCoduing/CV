@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body 
+{
+    height:100vh;
+    width: 100vw;
+    background: url("image/wave.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poppins";
+    background-size: cover;
+}
+
+.cv-container 
+{
+    height:95%;
+    width:45%;
+    background: ghostwhite;
+    background: url("image/circle-scatter-haikei.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+   
+   
+    
+    
+}
+
+.intro-container
+{
+    width:230px;
+    height:90%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.info-container 
+{
+    width:350px;
+    height:80%;
+    
+}
+
+.intro-container .name-container
+{
+    height:35%;
+    width:100%;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.intro-container .name-container .img 
+{
+    width:150px;
+    height:150px;
+    background: lightgoldenrodyellow;
+    border-radius: 50%;
+    z-index: 99;
+    flex-shrink: 0;
+    display: none;
+    
+}
+
+.intro-container .name-container .name
+{
+    width:80%;
+    height:150px;
+    background: lightgreen;
+    border-radius: 12px;
+    position: relative;
+    bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    top: 50px;
+    
+}
+.intro-container .name-container .name p 
+{
+    position: relative;
+    bottom: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.intro-container .join 
+{
+    width:100%;
+    height:0;
+    background: lightcoral;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+    padding: 15px 15px 0 10px;
+    color:rgba(245, 245, 245, 0.918);
+    transition: all .5s ease-out;
+    opacity: 0;
+    position: relative;
+    transform: translateY(-20px);
+
+}
+.intro-container .join.active
+{
+   height:50%;
+   opacity: 1;
+   transform: translateY(20px);
+}
+
+.intro-container .name-container .name .arrow 
+{
+    width:40px;
+    height:40px;
+    background: lightseagreen;
+    border-radius: 50%;
+    position: relative;
+    top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    z-index: 99;
+    transition: all .3s ease;
+    
+}
+.intro-container .name-container .name .arrow:active 
+{
+    transform: scale(.7);
+}
+
+.intro-container .name-container .name .arrow i 
+{
+    color: ghostwhite;
+    font-size: 20px;
+}
+
+
+
+
+
+
+.intro-container .join .mail p
+{
+    font-size: 15px;
+}
+
+.intro-container .join .number , .intro-container .join .mail , .intro-container .join .adresse
+{
+   opacity: 0;
+  
+   
+}
+.intro-container .join.active .number , .intro-container .join.active .mail , .intro-container .join.active .adresse
+{
+    opacity: 1;
+    transition: all .5s ease ;
+    transition-delay:.3s ;
+    
+    
+}
+.info-container
+{
+    display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: center;
+   gap: 40px;
+    
+    
+}
+.info-container .top 
+{
+    width:100%;
+    height:30%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.info-container .edu
+{
+    width:50%;
+    height:100%;
+    background: lightcoral;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+    
+}
+.info-container .comp
+{
+    width:50%;
+    height:100%;
+    background: lightgoldenrodyellow;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.info-container .projets 
+{
+    width:100%;
+    height:350px;
+    background:cornflowerblue;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+
+   
+    
+}
+.info-container .edu 
+{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 5px 0 0 5px;
+}
+
+.info-container .edu p
+{
+    font-size: 13px;
+    font-weight: 400;
+}
+.info-container .edu h5
+{
+    text-align: center;
+}
+.info-container .edu .date 
+{
+    text-decoration: underline;
+    font-weight: 500;
+    color:whitesmoke;
+}
+
+
+.info-container .level-bar 
+{
+    width:70px;
+    height:10px;
+    background:rgb(229, 226, 226);
+    border-radius: 8px;
+    border: none;
+}
+.info-container .comp 
+{
+    display: flex;
+    gap: 5px;
+    
+}
+
+.info-container .language 
+{
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 15px;
+    text-transform: uppercase;
+}
+.info-container .comp 
+{
+    padding: 10px 10px 10px 2px;
+    
+}
+
+.info-container .level 
+{
+        display: flex;
+        flex-direction: column;
+        padding-top: 20px;
+        gap: 22px;
+}
+
+.info-container .inside-lvl-h
+{
+    width:40px;
+    height:10px;
+    background: lightgreen;
+    border-radius: 8px;
+}
+.info-container .inside-lvl-c
+{
+    width:45px;
+    height:10px;
+    background: lightgreen;
+    border-radius: 8px;
+}
+.info-container .inside-lvl-j
+{
+    width:40px;
+    height:10px;
+    background: lightgreen;
+    border-radius: 8px;
+}
+.info-container .inside-lvl-g
+{
+    width:40px;
+    height:10px;
+    background: lightgreen;
+    border-radius: 8px;
+}
+
+.projets 
+{
+    display: grid;
+    grid-template-columns: repeat(2,150px);
+    padding:20px;
+    gap: 10px;
+}
+.projets .projet
+{
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   position: relative;
+
+}
+
+.projets .projet.one 
+{
+    background: lightgray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.projets .projet.two
+{
+    background:lightgray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.projets .projet.three
+{
+    background:lightgray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    
+}
+
+.projets .projet.four
+{
+    background:lightgray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.projets .projet a 
+{
+    text-decoration: none;
+    color: black;
+    z-index: 99;
+    font-weight: 500;
+}
+
+.projets .projet::before
+{
+    content: " ";
+    position: absolute;
+    background: snow;
+    clip-path: circle(27.8% at 0 0);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height:100%;
+    border-top-left-radius: 20px;
+    opacity: .9;
+    transition: all .4s ease;
+}
+
+.projets .projet.one:hover::before 
+{
+    clip-path: circle(141.4% at 0 0);
+    background: white;
+    border-bottom-right-radius:20px ;
+    border-top-right-radius:20px ;
+}
+.projets .projet.two:hover::before 
+{
+    border-bottom-left-radius:20px ;
+    border-top-right-radius:20px ;
+    clip-path: circle(141.4% at 0 0);
+
+}
+
+.projets .projet.three:hover::before 
+{
+    border-bottom-right-radius:20px ;
+    border-top-right-radius:20px ;
+    clip-path: circle(141.4% at 0 0);
+
+}
+.projets .projet.four:hover::before 
+{
+    border-bottom-left-radius:20px ;
+    border-top-right-radius:20px ;
+    clip-path: circle(141.4% at 0 0);
+    
+
+}
+
